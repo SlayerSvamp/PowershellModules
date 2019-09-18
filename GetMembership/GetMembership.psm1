@@ -85,7 +85,7 @@ function FormatStuff {
                 $output | Add-Member @{ User  = @($_.Group.User) }
                 $output | Add-Member @{ Group = $_.Name }
                 $output
-            } | Sort-Object Count, User, Group | Format-Table
+            } | Sort-Object Count, User, Group # | Format-Table
     }
 }
 
